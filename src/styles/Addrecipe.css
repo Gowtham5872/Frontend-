@@ -1,0 +1,71 @@
+.addrecipe-container {
+  width: 90%; 
+  max-width: 600px;
+  margin: 150px auto 20px; 
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center; 
+}
+
+.addrecipe-container h2 {
+  margin-bottom: 20px;
+}
+
+.addrecipe-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.addrecipe-container label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.addrecipe-container input[type="text"],
+.addrecipe-container textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 100%; 
+}
+
+.addrecipe-container .ingredient-inputs {
+  margin-bottom: 15px;
+}
+
+.addrecipe-container .ingredient-inputs button[type="button"] {
+  margin-left: 10px;
+  padding: 5px 10px;
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.addrecipe-container button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.addrecipe-container button[type="submit"]:hover,
+.addrecipe-container .ingredient-inputs button[type="button"]:hover {
+  opacity: 0.8;
+}
+
+.addrecipe-container .error {
+  color: red;
+  margin-top: 5px;
+}
+
+
+  

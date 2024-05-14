@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&family=Poppins:wght@300&family=Roboto:wght@500;700&family=Source+Code+Pro:ital@1&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  background-color: #fbfbfb; /* Light gray */
+}
+
+/* Container for the Login form */
+.FormContainer {
+  border: 1px solid #999; /* Dark gray */
+  width: 90%;
+  max-width: 500px;
+  margin: auto;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  background-color: #fff; /* White */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  margin-top: 10rem !important;
+}
+
+/* Form styles */
+.FormContainer form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.FormContainer form input {
+  padding: 1rem;
+  font-size: 1rem;
+  border: 1px solid #a74141; /* Light gray */
+  outline: none;
+  border-radius: 0.3rem;
+  width: 100%;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.FormContainer form input:focus {
+  border-color: #007bff; /* Blue on focus */
+}
+
+.FormContainer form button {
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  background-color: #28a745; /* Green */
+  color: #fff; /* White */
+  border: none;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.FormContainer form button:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+.fill-fields-error {
+  color: #dc3545; /* Red */
+}
+
+/* Navbar container */
+nav {
+  background-color: #077ef6; /* Dark gray */
+  color: #fff; /* White */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Navigation items */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 1rem;
+  text-align: center;
+}
+
+/* Navigation links */
+nav ul li a {
+  color: #111010; /* White */
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 0.2rem;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+nav .nav-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav ul li a.active {
+  background-color: #2626a3; /* Blue */
+  color: #ece3e3; /* White */
+  border-radius: 0.2rem;
+}
+
+nav .nav-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0.5rem;
+}
+
+.ellipsis-icon{
+  display: none;
+  transition: all 0.4s ease-in-out;
+}
+
+/* Hamburger icon styles */
+/* Hamburger icon styles */
+.ellipsis-icon {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: transform 0.4s ease-in-out;
+}
+
+
+/* Media query for mobile and tablet devices */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    height: auto;
+    padding: 0;
+    align-items: flex-start;
+    position: relative;
+  }
+
+  .ellipsis-icon   {
+    display: block;
+  }
+
+  .nav-right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Add space between items */
+    background-color: #9f1d1d; /* Dark gray */
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+    position: absolute;
+    top: 3.5rem;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    padding: 0 1rem; /* Add padding to space the items */
+  }
+
+  .nav-right.open {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  nav ul li {
+    display: inline-block;
+    margin: 0;
+    text-align: center;
+  }
+
+  .search-bar.active {
+    position: fixed;
+    top: 60px; /* Adjust according to your navbar height */
+    z-index: 1000;
+  }
+}

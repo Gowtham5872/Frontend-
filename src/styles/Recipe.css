@@ -1,0 +1,124 @@
+.Recipes {
+  max-width: 800px;
+  margin: 80px auto 20px; 
+  padding: 20px;
+  z-index: 999; 
+}
+
+.search-bar {
+  position: sticky;
+  top: 60px;
+  z-index: 1000; 
+  background-color: #fff;
+  padding: 10px 0;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.Recipe {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.Recipe h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.Recipe img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+
+.Recipe h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.Recipe ul {
+  list-style: none;
+  padding: 0;
+}
+
+.Recipe li {
+  margin-bottom: 5px;
+}
+
+.instructions-container {
+  margin-top: 20px;
+}
+
+.instructions-text {
+  white-space: pre-line;
+}
+
+.delete-button,
+.add-to-favorites-button {
+  padding: 10px 20px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.delete-button {
+  background-color: #f44336;
+  color: #fff;
+}
+
+.add-to-favorites-button {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+.rating-section {
+  margin-top: 20px;
+}
+
+.rating-section label {
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.rating-section input[type="number"] {
+  padding: 8px;
+  font-size: 16px;
+}
+
+.comment-section {
+  margin-top: 20px;
+}
+
+.comment-section label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.comment-section textarea {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  resize: vertical;
+}
+
+.no-recipes {
+  text-align: center;
+  margin-top: 20px;
+}
+
+
+
+
+
