@@ -31,15 +31,15 @@ const Recipes = () => {
 
   const getRecipes = async () => {
     try {
-      const response = await axios.get("http://localhost:4000/auth/recipe", {
+      const response = await axios.get("https://backend-nu7m.onrender.com/auth/recipe", {
         headers: {
           Authorization: `${localStorage.getItem("token")}`,
         },
       });
-      // Fetch only the last rating and comment for each recipe
+      
       const recipesWithLatestRatingAndComment = await Promise.all(response.data.map(async (recipe) => {
-        const ratingResponse = await axios.get(`http://localhost:4000/auth/recipe/${recipe._id}/ratings`);
-        const commentResponse = await axios.get(`http://localhost:4000/auth/recipe/${recipe._id}/comments`);
+        const ratingResponse = await axios.get(`https://backend-nu7m.onrender.com/auth/recipe/${recipe._id}/ratings`);
+        const commentResponse = await axios.get(`https://backend-nu7m.onrender.com/auth/recipe/${recipe._id}/comments`);
         const latestRating = ratingResponse.data.length > 0 ? ratingResponse.data[ratingResponse.data.length - 1] : null;
         const latestComment = commentResponse.data.length > 0 ? commentResponse.data[commentResponse.data.length - 1] : null;
         return {
@@ -58,7 +58,7 @@ const Recipes = () => {
     try {
       if (window.confirm("Do you want to delete this recipe?")) {
         const response = await axios.delete(
-          `http://localhost:4000/auth/recipe/${recipeId}`
+          `https://backend-nu7m.onrender.com/auth/recipe/${recipeId}`
         );
         if (response.status === 200) {
           window.alert("Recipe deleted successfully");
@@ -75,7 +75,7 @@ const Recipes = () => {
   const handleAddToFavorites = async (recipeId) => {
     try {
       const response = await axios.post(
-        `http://localhost:4000/auth/likedRecipes/${recipeId}`
+        `https://backend-nu7m.onrender.com/auth/likedRecipes/${recipeId}`
       );
       if (response.status === 201) {
         window.alert("Recipe added to favorites successfully");
@@ -95,13 +95,13 @@ const Recipes = () => {
   const handleRateRecipe = async (recipeId, rating) => {
     try {
       const response = await axios.post(
-        `http://localhost:4000/auth/recipe/${recipeId}/rate`,
+        `https://backend-nu7m.onrender.com/auth/recipe/${recipeId}/rate`,
         { rating }
       );
       if (response.status === 200) {
         window.alert("Recipe rated successfully");
         
-        // Do not update the recipes state here
+        
       } else {
         window.alert("Failed to rate recipe");
       }
@@ -115,12 +115,12 @@ const Recipes = () => {
     try {
       console.log(comment);
       const response = await axios.post(
-        `http://localhost:4000/auth/recipe/${recipeId}/comment`,
+        `https://backend-nu7m.onrender.com/auth/recipe/${recipeId}/comment`,
         { comment }
       );
       if (response.status === 200) {
         window.alert("Comment added successfully");
-        // Clear the comment box after successful submission
+       
         const updatedRecipes = recipes.map((recipe) => {
           if (recipe._id === recipeId) {
             return { ...recipe, comment: '' };
@@ -162,7 +162,7 @@ const Recipes = () => {
       const searchTerm = e.target.value.toLowerCase();
       if (searchTerm) {
         const response = await axios.get(
-          `http://localhost:4000/auth/searchRecipes/${searchTerm}`,
+          `https://backend-nu7m.onrender.com/auth/searchRecipes/${searchTerm}`,
           {
             headers: {
               "Content-Type": "application/json",

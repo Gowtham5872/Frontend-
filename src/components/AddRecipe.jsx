@@ -23,7 +23,7 @@ const AddRecipe = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:4000/auth/recipe",
+        "https://backend-nu7m.onrender.com/auth/recipe",
         values
       );
 

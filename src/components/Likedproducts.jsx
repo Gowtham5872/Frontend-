@@ -13,7 +13,7 @@ const LikedProducts = () => {
     try {
       
       const response = await fetch(
-        "http://localhost:4000/auth/likedRecipes"
+        "https://backend-nu7m.onrender.com/auth/likedRecipes"
       );
 
       if (!response.ok) {
@@ -37,7 +37,7 @@ const LikedProducts = () => {
         )
       ) {
         const response = await fetch(
-          `http://localhost:4000/auth/removeLiked/${recipeId}`,
+          `https://backend-nu7m.onrender.com/auth/removeLiked/${recipeId}`,
           {
             method: "DELETE",
           }

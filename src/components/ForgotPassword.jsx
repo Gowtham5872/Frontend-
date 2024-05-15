@@ -8,7 +8,7 @@ const ForgotPassword = () => {
   const handleSubmit = async (values, { setSubmitting, resetForm }) => {
     try {
       const response = await axios.put(
-        "http://localhost:4000/auth/forgotpassword",
+        "https://backend-nu7m.onrender.com/auth/forgotpassword",
         values
       );
 

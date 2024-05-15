@@ -24,7 +24,7 @@ const Profile = () => {
       }
       
       try {
-        const response = await axios.get("http://localhost:4000/auth/profile", {
+        const response = await axios.get("https://backend-nu7m.onrender.com/auth/profile", {
           headers: {
             Authorization: token,
           },
@@ -55,7 +55,7 @@ const Profile = () => {
   const handleSaveClick = async () => {
     try {
       const token = localStorage.getItem("token");
-      await axios.post("http://localhost:4000/auth/profile/update", updatedData, {
+      await axios.post("https://backend-nu7m.onrender.com/auth/update", updatedData, {
         headers: {
           Authorization: token,
         },
@@ -70,7 +70,7 @@ const Profile = () => {
   const handleDeleteClick = async () => {
     try {
       const token = localStorage.getItem("token");
-      await axios.delete("http://localhost:4000/auth/profile/delete", {
+      await axios.delete("https://backend-nu7m.onrender.com/auth/delete", {
         headers: {
           Authorization: token,
         },

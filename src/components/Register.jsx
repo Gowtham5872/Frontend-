@@ -9,7 +9,7 @@ const Register = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:4000/auth/register",
+        "https://backend-nu7m.onrender.com/auth/register",
         {
           name,
           email: email.toLowerCase(),
