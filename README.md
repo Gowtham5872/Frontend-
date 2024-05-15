@@ -1,8 +1,23 @@
-# React + Vite
+# Recipe Sharing Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a frontend application for a recipe sharing platform where users can discover, share, and rate recipes.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Discover Recipes:** Browse through a wide range of recipes sorted by categories or search for specific recipes.
+- **Share Recipes:** Registered users can upload their own recipes to share with the community.
+- **Rate Recipes:** Users can rate recipes they have tried and leave comments.
+- **Favorite Recipes:** Save your favorite recipes for quick access.
+- **Responsive Design:** The platform is optimized for various devices including desktops, tablets, and mobile phones.
+
+## Technologies Used
+
+- **React:** JavaScript library for building user interfaces.
+- **React Router:** Library for navigation and routing in React applications.
+- **Axios:** Promise-based HTTP client for making API requests.
+- **CSS:** Styling the user interface.
+- **FontAwesome:** Icon library for adding icons to the application.
+
+
+
+
