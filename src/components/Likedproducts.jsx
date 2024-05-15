@@ -52,7 +52,7 @@ const LikedProducts = () => {
           window.alert(data.error);
         }
       } else {
-        window.location.href = "/favouriteRecipes";
+        window.location.href = "https://backend-nu7m.onrender.com/auth/favouriteRecipes";
       }
     } catch (error) {
       window.alert("Error removing item from liked products:", error);

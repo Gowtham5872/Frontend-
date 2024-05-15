@@ -77,7 +77,7 @@ const Profile = () => {
       });
       
       localStorage.removeItem("token");
-      window.location.href  = "/login";
+      window.location.href  = "https://backend-nu7m.onrender.com/auth/login";
     } catch (error) {
       console.error("Error deleting profile:", error);
     }

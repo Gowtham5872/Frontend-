@@ -10,9 +10,9 @@ const Navbar = () => {
   const LogoutUser = () => {
     if (window.confirm("You wanna logout?")) {
       localStorage.clear();
-      window.location.href = "/login";
+      window.location.href = "https://backend-nu7m.onrender.com/auth/login";
     } else {
-      window.location.href = "/recipes";
+      window.location.href = "https://backend-nu7m.onrender.com/auth/recipes";
     }
   };
 
