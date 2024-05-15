@@ -62,9 +62,9 @@ const Recipes = () => {
         );
         if (response.status === 200) {
           window.alert("Recipe deleted successfully");
-         
-            window.location = "https://backend-nu7m.onrender.com/auth/recipes";
-         
+          setTimeout(() => {
+            window.location = "/recipes";
+          }, 4000);
         }
       }
     } catch (error) {

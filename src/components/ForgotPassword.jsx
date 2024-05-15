@@ -14,8 +14,9 @@ const ForgotPassword = () => {
 
       if (response.status === 200) {
         window.alert("Password Updated successfully");
-       
-          window.location.href = "https://backend-nu7m.onrender.com/auth/login";
+        setTimeout(() => {
+          window.location.href = "/login";
+        }, 4000);
       } else {
         window.alert("An error occurred while updating the password.");
       }

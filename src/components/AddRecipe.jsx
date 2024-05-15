@@ -31,7 +31,7 @@ const AddRecipe = () => {
         window.alert("Recipe added successfully");
 
         setTimeout(() => {
-          window.location.href = "https://backend-nu7m.onrender.com/auth/recipes";
+          window.location.href = "/recipes";
         }, 4000);
       } else {
         throw new Error("Failed to add recipe");
