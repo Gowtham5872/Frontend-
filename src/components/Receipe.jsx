@@ -63,7 +63,7 @@ const Recipes = () => {
         if (response.status === 200) {
           window.alert("Recipe deleted successfully");
           setTimeout(() => {
-            window.location = "/recipes";
+            window.location.href = "/recipes";
           }, 4000);
         }
       }
