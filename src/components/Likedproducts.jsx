@@ -13,7 +13,7 @@ const LikedProducts = () => {
     try {
       
       const response = await fetch(
-        "https://backend-nu7m.onrender.com/auth/likedRecipes"
+        "https://backend-2-h4cf.onrender.com/auth/likedRecipes"
       );
 
       if (!response.ok) {

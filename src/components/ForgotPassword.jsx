@@ -8,7 +8,7 @@ const ForgotPassword = () => {
   const handleSubmit = async (values, { setSubmitting, resetForm }) => {
     try {
       const response = await axios.put(
-        "https://backend-nu7m.onrender.com/auth/forgotpassword",
+        "https://backend-2-h4cf.onrender.com/forgotpassword",
         values
       );
 

@@ -17,7 +17,7 @@ const Login = () => {
 
     try {
       const response = await axios.post(
-        "https://backend-nu7m.onrender.com/auth/login",
+        "https://backend-2-h4cf.onrender.com/auth/login",
         {
           email: email.toLowerCase(),
           password,

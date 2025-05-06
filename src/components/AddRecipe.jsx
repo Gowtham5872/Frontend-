@@ -23,7 +23,7 @@ const AddRecipe = () => {
 
     try {
       const response = await axios.post(
-        "https://backend-nu7m.onrender.com/auth/recipe",
+        "https://backend-2-h4cf.onrender.com/auth/recipe",
         values
       );
 
